@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kita akan menggunakan hlyout... -->
+
+<hlayout width="1024">
+<separator width="150px"></separator>
+<window id="t" title="Animasi Jquery" border="normal" width="300px">
+<vlayout style="text-align:center">
+<image src="img/zk.png"></image>
+<!--kita akan membuat button untuk aktifitas animasi.... part 2-->
+</vlayout>
+</window>
+<!--  kita menggunakan group box untuk menampung button yang akan di gunakan.. -->
+
+<groupbox closable="false" sclass="z-demo-config" xmlns:w='client'>
+<caption label="Pilihan effect"></caption>
+<vlayout>
+	<button height="30px" width="200px" label="Slide Down" w:onClick="jq(this.$f('t')).hide().slideDown(1000)" />
+	<button height="30px" width="200px" label="Slide UP" w:onClick="jq(this.$f('t')).show().slideUp(1000)" />
+	<button height="30px" width="200px" label="Fade IN" w:onClick="jq(this.$f('t')).hide().fadeIn(1000)" />
+	<button height="30px" width="200px" label="Fade OUT" w:onClick="jq(this.$f('t')).show().fadeOut(1000)"/>
+	<button height="30px" width="200px" label="Slide Toogle" w:onClick="jq(this.$f('t')).show.slideToogle(1000)"/>
+</vlayout>
+</groupbox>
+</hlayout>
+<!-- itu saja dari saya ... selamat mencoba.... salam annabe -->
